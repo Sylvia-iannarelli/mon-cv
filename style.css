@@ -1,0 +1,164 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b7079;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    
+    .card-one {
+        padding: 40px 20px;
+        padding-left: 35px;
+        background-color: #181818;
+        width: 100%;
+        color: #6d6d6d;
+        
+        .profile {
+            display: inline-flex;
+            margin-bottom: 5px;
+            margin-left: -15px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 2px solid #181818;
+            background-image: url("Sylvia-i.jpg");
+            background-position: center top;
+            background-size: 90%;
+        }
+    
+        h2 {
+            color: #e8c289;  
+            margin-top: 50px;
+            margin-bottom: 20px;;
+        }
+
+        .contact-box {
+            >* {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 0.2fr 1.3fr;
+                margin-top: 25px;
+                align-items: center;
+                gap: 10px;
+
+                .text {
+                    display: inline-flex;
+                    word-break: break-all;
+                }
+            }
+        }
+
+        .personal-box, .hobbies-box {
+            margin-top: 35px;
+
+            p {
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .card-two {
+        background-color: #468891;
+        padding: 40px 20px;
+        width: 100%;
+        color: #181818;
+
+        .head-title {
+            text-align: center;
+            h1 {
+                font-size: 3em;
+                font-weight: 700;
+            }
+            h2 {
+                color: #fff;
+            }
+        }
+        
+        .box {
+            display: inline-block;
+            padding: 2px 70px 2px 20px;
+            margin-left: -20px;
+            margin-top: 30px;
+            background-color: #e8c289;
+        }
+        
+        .formation, .xp {
+            margin-top: 10px;
+
+            em {
+                font-size: 0.9em;
+            }
+
+            ul {
+                position: relative;
+                margin-top: 10px;
+                margin-left: 5px;
+    
+                li {
+                    list-style-type: none;
+                    position: relative;
+                }
+
+                li::before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: -14px;
+                    height: 120px;
+                    border-left: 2px solid #e8c289;
+                }
+
+            }
+
+            ul:first-of-type li::before {
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: -14px;
+                height: 175px;
+                border-left: 2px solid #e8c289;
+            }
+
+            ul:last-of-type li::before {
+                content: none;
+            }
+
+            ul::before {
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: -18px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #e8c289;
+            }
+        }
+    
+        .technos {
+            padding: 20px;
+            display: grid;
+            grid-template: 1fr 1fr/1fr 1fr 1fr;
+            gap: 30px;
+            justify-items: center;
+
+            img {
+                height: 60px;
+
+            }
+        }
+    }
+}
