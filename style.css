@@ -57,7 +57,7 @@ body {
                     font-size: 0.95em;
                 }
 
-                a {
+                a, a:visited, a:active {
                     text-decoration: none;
                     color: #6d6d6d;
                 }
@@ -186,6 +186,5 @@ body {
 
     * {
         -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
     }
 }
