@@ -35,10 +35,10 @@ body {
             background-position: left top;
             background-size: 90%;
         }
-    
+        
         h2 {
             color: #e8c289;  
-            margin-top: 70px;
+            margin-top: 60px;
             margin-bottom: 20px;
             font-size: 1.3rem;
         }
@@ -105,7 +105,7 @@ body {
             display: inline-block;
             padding: 2px 70px 2px 20px;
             margin-left: -30px;
-            margin-top: 40px;
+            margin-top: 20px;
             background-color: #e8c289;
             letter-spacing: 2px;
         }
@@ -122,21 +122,17 @@ body {
                 position: relative;
                 margin-top: 10px;
                 margin-left: 5px;
+                line-height: 1.3rem;
     
                 li {
                     list-style-type: none;
                     position: relative;
+
                 }
 
-                li::before {
-                    content: "";
-                    position: absolute;
-                    top: 12px;
-                    left: -14px;
-                    height: 100px;
-                    border-left: 2px solid #e8c289;
+                .list {
+                    margin-left: 10px;
                 }
-
             }
 
             ul:first-of-type li::before {
@@ -144,12 +140,17 @@ body {
                 position: absolute;
                 top: 12px;
                 left: -14px;
-                height: 175px;
+                height: 200px;
                 border-left: 2px solid #e8c289;
             }
 
-            ul:last-of-type li::before {
-                content: none;
+            ul:nth-of-type(2) li::before {
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: -14px;
+                height: 160px;
+                border-left: 2px solid #e8c289;
             }
 
             ul::before {
@@ -167,12 +168,17 @@ body {
         .technos {
             padding: 20px;
             display: grid;
-            grid-template: 1fr 1fr/1fr 1fr 1fr;
-            gap: 30px;
+            grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
             justify-items: center;
 
-            img {
-               height: 60px;
+            .img {
+               height: 50px;
+            }
+
+            .php-logo {
+                height: 80px;
+                margin-top: -15px;
             }
         }
     }
