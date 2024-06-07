@@ -191,23 +191,20 @@ body {
     }
 
     .container {
-
         .card-one {
-            background-color: #717171;
+            background-color: #1818185b;
             color: #181818;
         }
-
         .card-two {
-            background-color: #ffffff;
-
+            background-color: #4688915b;
             h2 {
                 color: #fff;
             }
         }
-
     }
 
     * {
-        /* -webkit-print-color-adjust: exact; */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
