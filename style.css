@@ -190,7 +190,24 @@ body {
         size: A4;
     }
 
+    .container {
+
+        .card-one {
+            background-color: #717171;
+            color: #181818;
+        }
+
+        .card-two {
+            background-color: #ffffff;
+
+            h2 {
+                color: #fff;
+            }
+        }
+
+    }
+
     * {
-        -webkit-print-color-adjust: exact;
+        /* -webkit-print-color-adjust: exact; */
     }
 }
