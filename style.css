@@ -194,6 +194,14 @@ body {
         .card-one {
             background-color: #1818185b;
             color: #181818;
+            h2 {
+                color: #181818;
+            }
+            .contact-box {
+                a, a:visited, a:active {
+                    color: #181818;
+                }
+            }
         }
         .card-two {
             background-color: #4688915b;
