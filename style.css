@@ -192,7 +192,7 @@ body {
 
     .container {
         .card-one {
-            background-color: #1818185b;
+            background-color: #4688918f;
             color: #181818;
             h2 {
                 color: #181818;
@@ -204,9 +204,25 @@ body {
             }
         }
         .card-two {
-            background-color: #4688915b;
-            h2 {
-                color: #fff;
+            background-color: #fff;
+            .head-title {
+                h2 {
+                    color: #1818188f;
+                }
+            }
+            .box {
+                background-color: #e8c2898f;
+            }
+            .formation, .xp {
+                ul:first-of-type li::before {
+                    border-left: 2px solid #e8c2898f;
+                }
+                ul:nth-of-type(2) li::before {
+                    border-left: 2px solid #e8c2898f;
+                }
+                ul::before {
+                    background-color: #e8c2898f;
+                }
             }
         }
     }
